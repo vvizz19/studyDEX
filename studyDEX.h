@@ -155,6 +155,10 @@ struct DexCode {
 	u4 debugInfoOff;    /* offset of debug info */
 	u4 insnsSize;       /* size of instruction */
 	u2 insns[1];        /* data of instruction */
+	/* align, 2 byte */
+	/* try_item[triesSize] DexTry struct */
+	/* size of handle of Try/Catch */
+	/* catch_handle_item[handlerSize], DexCatchHandler struct */
 };
 
 
